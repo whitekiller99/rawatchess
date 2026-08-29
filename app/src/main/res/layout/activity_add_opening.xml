@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <!-- =========================================================
+         OPENING NAME
+         ========================================================= -->
+
+    <EditText
+        android:id="@+id/etOpeningName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Opening name"
+        android:singleLine="true" />
+
+
+    <!-- =========================================================
+         CHESS BOARD + EVALUATION BAR
+         ========================================================= -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <!-- STOCKFISH EVALUATION BAR -->
+
+        <com.example.chess.EvalBarView
+            android:id="@+id/evalBar"
+            android:layout_width="20dp"
+            android:layout_height="match_parent" />
+
+
+        <!-- CHESS BOARD -->
+
+        <com.example.chess.ChessBoardView
+            android:id="@+id/chessBoardView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+
+    <!-- =========================================================
+         STOCKFISH EVALUATION TEXT
+         ========================================================= -->
+
+    <TextView
+        android:id="@+id/tvEvaluation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:text="0.00"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+
+    <!-- =========================================================
+         ANNOTATION TOOLS
+         ========================================================= -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnMoveMode"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Move" />
+
+        <Button
+            android:id="@+id/btnCircle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Circle" />
+
+        <Button
+            android:id="@+id/btnArrow"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Arrow" />
+
+    </LinearLayout>
+
+
+    <!-- =========================================================
+         ANNOTATION COLORS
+         ========================================================= -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnGreen"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Green" />
+
+        <Button
+            android:id="@+id/btnRed"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Red" />
+
+        <Button
+            android:id="@+id/btnClearMarks"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Clear Marks" />
+
+    </LinearLayout>
+
+
+    <!-- =========================================================
+         MOVE LIST
+         ========================================================= -->
+
+    <TextView
+        android:id="@+id/tvMoveList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text=""
+        android:textSize="14sp" />
+
+
+    <!-- =========================================================
+         BOTTOM BUTTONS
+         ========================================================= -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnUndo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Undo" />
+
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Reset" />
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Save" />
+
+    </LinearLayout>
+
+</LinearLayout>

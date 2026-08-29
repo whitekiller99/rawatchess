@@ -1,0 +1,21 @@
+{
+  "id": "builtin-italian",
+  "name": "Italian Game",
+  "lines": [
+    {
+      "id": "italian01",
+      "name": "Italian01",
+      "moves": ["e2e4", "e7e5", "g1f3", "b8c6", "f1c4", "f8c5", "e1g1", "g8f6"]
+    },
+    {
+      "id": "italian02",
+      "name": "Italian02",
+      "moves": ["e2e4", "e7e5", "g1f3", "b8c6", "f1c4", "g8f6", "d2d3", "f8c5", "e1g1"]
+    },
+    {
+      "id": "italian03",
+      "name": "Italian03",
+      "moves": ["e2e4", "e7e5", "g1f3", "b8c6", "f1c4", "f8c5", "c2c3", "g8f6", "d2d4", "e5d4"]
+    }
+  ]
+}
